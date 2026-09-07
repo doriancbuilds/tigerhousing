@@ -21,7 +21,7 @@ function App () {
             
 
     useEffect(() => {
-                fetch(`{API_URL}/api/properties`)
+                fetch(`${API_URL}/api/properties`)
                     .then(res=>res.json())
                     .then(data => {                       
                         setProperties(data);
