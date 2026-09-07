@@ -4,6 +4,8 @@ import Properties from "./properties.jsx";
 import Footer from "./footer.jsx";
 import Model from './model.jsx';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function App () {
 
         const[properties, setProperties] = useState([]);
@@ -19,7 +21,7 @@ function App () {
             
 
     useEffect(() => {
-                fetch("http://localhost:3001/api/properties")
+                fetch(`{API_URL}/api/properties`)
                     .then(res=>res.json())
                     .then(data => {                       
                         setProperties(data);
