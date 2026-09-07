@@ -16,6 +16,7 @@ https://tigerhousing.netlify.app/
 Frontend: React, JavaScript, Vite, Tailwind CSS
 
 Backend: Node.js, Express, REST API
+
 Database: PostgreSQL 
 
 ## Database
